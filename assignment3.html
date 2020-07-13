@@ -1,0 +1,38 @@
+<html>
+  <head>
+  
+  <title>Assignment3.</title>
+  </head>
+  <body>
+
+    <script>
+      
+        var date = new Date();
+        var d = date.getDate();
+
+        var m = date.getMonth()+1; 
+        var y = date.getFullYear();
+        if(d<10) 
+        {
+            d='0'+d;
+        }        
+
+        if(m<10) 
+        {
+            m='0'+m;
+        } 
+        date = m+'-'+d+'-'+y;
+        document.write("Todays date is:"+date);
+        document.write("<br>");
+        date = m+'/'+d+'/'+y;
+        document.write("Todays date is:"+date);
+        document.write("<br>");
+        date= d+'-'+m+'-'+y;
+        document.write("Todays date is:"+date);
+        document.write("<br>");
+        date = d+'/'+m+'/'+y;
+        document.write("Todays date is:"+date);
+</script>
+  </body>
+  </html>
+  
